@@ -1,0 +1,19 @@
+.select-date{
+ font-size: 14px;
+ width: 25%;
+}
+
+.time-from{
+ font-size: 14px;
+ width: 10%;
+}
+
+.time-to{
+ font-size: 14px;
+ width: 10%;
+}
+
+option{
+ border: 1px solid #e5e5e5;
+ padding: 10px;
+}
