@@ -1,2 +1,2 @@
-# study-buddies
+# study-buddies.
 Final  project 
