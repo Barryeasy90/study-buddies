@@ -1,19 +1,23 @@
 import { useState } from "react";
-
-
+import logo from "../images/cyf-logo.png"
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle login logic here
   };
 
   return (
-    <div>
-     
-      <form onSubmit={handleSubmit}>
+    <>
+      <div className="cyf-logo">
+        <img src={logo} alt="logo" />
+      </div>
+
+      {/* <div className="logo"></div> */}
+
+      <form onSubmit={handleSubmit} className="form-container">
         <label htmlFor="Email">Email:</label>
         <input
           type="Email"
@@ -29,10 +33,10 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="Submit">Sign In</button>
+        <button>Forgot Password</button>
       </form>
-      <button>Forgot Password?</button>
-    </div>
+    </>
   );
 }
 
-export default Login
+export default Login;
